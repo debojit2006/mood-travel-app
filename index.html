@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Where should your mood take you?</h1>
+        <div class="mood-selector">
+            <button class="mood-btn" data-mood="Happy">😄 Happy</button>
+            <button class="mood-btn" data-mood="Cozy">🛋️ Cozy</button>
+            <button class="mood-btn" data-mood="Adventurous">⛰️ Adventurous</button>
+            <button class="mood-btn" data-mood="Bored">😐 Bored</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <div id="loader" class="hidden"></div>
+            <div id="suggestion-content">
+                <!-- Results will be injected here by JavaScript -->
+            </div>
+            <div id="error-info"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
