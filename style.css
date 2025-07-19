@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    max-width: 700px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.mood-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.mood-btn {
+    background-color: #ffffff;
+    color: #0072ff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mood-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#result-container {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    min-height: 200px;
+}
+
+#suggestion-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.city-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: 45%;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.city-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0072ff;
+}
+
+.city-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.city-card .card-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+#error-info {
+    color: #ffcdd2;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #0072ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
